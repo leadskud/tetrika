@@ -2,12 +2,17 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Ребёнок отстаёт по предметам за границей? Как подтянуть оценки и вернуть уверенность с онлайн-репетитором</title>
 <meta name="description" content="Двойки и тройки по русской программе, ребёнок потерял веру в себя, а местная школа не помогает? Разбираем, как индивидуальный онлайн-репетитор закрывает пробелы под конкретные предметы — оценки растут, уверенность возвращается. Первые занятия — бесплатно (до 5).">
 <meta property="og:title" content="Подтянуть оценки и поверить в себя — онлайн-репетитор из любой страны">
 <meta property="og:type" content="article">
-<meta name="robots" content="index,follow">
+<meta property="og:description" content="Двойки и тройки по русской программе, ребёнок потерял веру в себя, а школа не помогает? Индивидуальный онлайн-репетитор закрывает пробелы по нужным предметам.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://tetrika.skillscreen.net/v_grades.html">
+<meta name="twitter:card" content="summary">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://tetrika.skillscreen.net/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 <style>
   :root{
@@ -27,8 +32,9 @@
   .logo{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:-.01em;text-decoration:none;color:var(--ink);font-size:17px}
   .logo .mark{width:24px;height:24px;display:grid;place-items:center;border-radius:7px;background:var(--accent);color:#fff;font-size:14px}
   .logo small{font-weight:500;color:var(--muted);font-size:13px}
-  .navcta{display:inline-block;background:var(--cta);color:#fff;font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px;white-space:nowrap}
+  .navcta{display:inline-flex;align-items:center;min-height:44px;background:var(--cta);color:#fff;font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px;white-space:nowrap}
   .navcta:hover{background:var(--cta-d)}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
   @media(max-width:520px){.logo small{display:none}}
   .kicker{display:inline-block;margin-top:42px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700}
   h1{font-family:var(--serif);font-weight:600;font-size:42px;line-height:1.12;letter-spacing:-.015em;margin:.3em 0 .25em}
@@ -85,14 +91,14 @@
   .cta .btn{background:#fff;color:var(--cta-d)}
   .cta .btn:hover{background:#fff;color:var(--cta)}
   .cta .small{display:block;margin-top:14px;font-size:13px;color:#cdbef0}
-  details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none}
+  details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;padding:8px 0}
   summary::-webkit-details-marker{display:none}summary::before{content:"+";color:var(--accent);font-weight:700;margin-right:10px}
   details[open] summary::before{content:"–"}details p{margin:.5em 0 0;color:#3c3850;font-size:16px}
   footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0 90px;font-size:14px;color:var(--muted)}
   footer .disc{background:#f1eff8;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:20px;font-size:13.5px;line-height:1.55}
   footer a{color:var(--muted)}footer .frow{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   /* sticky mobile cta */
-  .stickycta{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -4px 20px rgba(60,40,120,.08)}
+  .stickycta{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -4px 20px rgba(60,40,120,.08)}
   .stickycta .t{font-size:13px;color:var(--muted);line-height:1.3}
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
@@ -103,7 +109,7 @@
 
 <header class="site">
   <div class="wrap bar">
-    <a class="logo" href="/"><span class="mark">📚</span> Корни <small>· онлайн-обучение для семей за рубежом</small></a>
+    <a class="logo" href="/"><span class="mark" aria-hidden="true">📚</span> Корни <small>· онлайн-обучение для семей за рубежом</small></a>
     <a class="navcta" href="#start" data-cta="header">До 5 уроков бесплатно</a>
   </div>
 </header>
@@ -111,13 +117,13 @@
 <div class="wrap">
   <span class="kicker">Подтянуть оценки · вернуть уверенность · до 5 занятий бесплатно</span>
   <h1>Ребёнок «не тянет» русскую программу за границей? Это поправимо — и быстрее, чем кажется</h1>
-  <p class="dek">Двойки и тройки по паре предметов, опущенные руки, фраза «у меня всё равно не получится». Местная школа учит по-своему, помочь с русским курсом некому. Разбираем спокойный путь: индивидуальный онлайн-репетитор закрывает именно те пробелы, что мешают — и оценки, и вера в себя возвращаются — начать можно с бесплатных занятий (до 5), просто чтобы попробовать.</p>
+  <p class="dek">Двойки и тройки по паре предметов, опущенные руки, фраза «у меня всё равно не получится». Местная школа учит по-своему, помочь с русским курсом некому. Индивидуальный онлайн-репетитор закрывает именно те пробелы, что мешают: оценки подтягиваются, а вера в себя возвращается. Начать можно с бесплатных занятий (до 5) — просто чтобы попробовать.</p>
 
   <div class="herocta">
     <a class="btn" href="#start" data-cta="hero">Забрать до 5 бесплатных занятий</a>
     <a class="btn ghost" href="#how">Как это устроено</a>
   </div>
-  <p class="microtrust">Первые <b>занятия — бесплатно (до 5), без оплаты на старте</b>. Преподаватель найдёт пробелы и покажет формат — дальше только если подойдёт.</p>
+  <p class="microtrust">Первые <b>занятия — бесплатно (до 5)</b>. Преподаватель найдёт пробелы и покажет формат — дальше только если подойдёт.</p>
 
   <div class="byline">
     <span class="av"></span>
@@ -125,9 +131,9 @@
   </div>
 </div>
 
-<div class="wrap"><article>
+<main><div class="wrap"><article>
 
-  <p class="lead">Отставание по предмету редко начинается с большого провала. Сначала пропущена пара тем, потом непонятая глава, потом «да я всё равно не пойму» — и ребёнок перестаёт стараться там, где раньше тянул. За границей это копится быстрее: местная школа идёт по своей программе, родителям некогда садиться за русский учебник, а двойка в дневнике бьёт по уверенности сильнее самой темы. Хорошая новость: пробел — это конкретное, починяемое место. Ниже — как его найти и закрыть, не теряя ребёнка по дороге.</p>
+  <p class="lead">Отставание по предмету редко начинается с большого провала. Сначала пропущена пара тем, потом непонятая глава, потом «да я всё равно не пойму» — и ребёнок перестаёт стараться там, где раньше тянул. За границей это копится быстрее: местная школа идёт по своей программе, родителям некогда садиться за русский учебник, а двойка в дневнике бьёт по уверенности сильнее самой темы. Хорошая новость: пробел — это конкретное, починяемое место. Дальше расскажем, как его найти и закрыть, не теряя ребёнка по дороге.</p>
 
   <h2>Знакомо? Тогда дело не в способностях</h2>
   <div class="pains">
@@ -136,12 +142,12 @@
     <div class="pain"><b>Местная школа не про русскую программу</b><span>Учат по другой системе и на другом языке — русский курс «провисает», догонять некому.</span></div>
     <div class="pain"><b>Дома помочь не выходит</b><span>Своя программа, свой темп, нет времени и нужной методики — объяснения превращаются в конфликт.</span></div>
   </div>
-  <p>Всё это сходится в одной точке: ребёнку нужен <b>не «общий курс», а человек, который найдёт конкретные пробелы и объяснит именно их</b> — спокойно, в его темпе, по российской программе.</p>
+  <p>Всё это сходится в одной точке: общий курс тут не поможет. Ребёнку нужен <b>человек, который найдёт конкретные пробелы и объяснит именно их</b> — спокойно, в его темпе, по российской программе.</p>
 
   <h2 id="how">Как пробелы превращаются в нормальные оценки</h2>
   <ol class="steps">
     <li><b>До 5 бесплатных занятий — диагностика</b><span>Преподаватель знакомится с ребёнком и спокойно выясняет, где именно «дыры»: какая тема не закрыта, с чего поехало. Без оплаты и без обязательств.</span></li>
-    <li><b>Программа под пробелы, а не под класс</b><span>Маршрут строится под реальные слабые места конкретного ребёнка и под цель — подтянуть предмет, выправить оценки, перестать бояться вызова к доске.</span></li>
+    <li><b>Программа под пробелы, а не под класс</b><span>Маршрут строится под реальные слабые места конкретного ребёнка и под цель: подтянуть предмет и выправить оценки, чтобы перестать бояться вызова к доске.</span></li>
     <li><b>Маленькие победы — и интерес возвращается</b><span>Когда непонятное становится понятным, ребёнок снова видит результат. Первая нормальная оценка работает лучше любой мотивации.</span></li>
     <li><b>Темп и расписание под вас</b><span>Из любого часового пояса; материалы и записи остаются в личном кабинете — можно вернуться и повторить трудную тему.</span></li>
   </ol>
@@ -165,7 +171,7 @@
   <div class="case">
     <div class="row">
       <div class="box"><div class="lbl">До</div><div class="big">7 класс за рубежом, тройки и двойки по математике, «я тупой, всё равно не пойму», уроки через слёзы</div></div>
-      <div class="arrow">→</div>
+      <div class="arrow" aria-hidden="true">→</div>
       <div class="box after"><div class="lbl">После курса занятий</div><div class="big">Закрыты пропущенные темы, оценки выровнялись, ребёнок снова берётся за сложное сам — без давления</div></div>
     </div>
     <div class="disc">Иллюстративный сценарий типичного запроса, а не отзыв конкретного ученика. Реальный результат зависит от исходного уровня, причины отставания и регулярности занятий.</div>
@@ -175,8 +181,9 @@
   <p>Очный репетитор по русской программе за рубежом стоит дорого и есть не везде — а подтягивать предмет нужно регулярно, неделя за неделей. Онлайн-занятия на платформе доступны из любой страны и заметно дешевле в пересчёте на урок, поэтому регулярность реально потянуть.</p>
   <div class="price">
     <div class="col"><div class="lbl" style="font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:700">Очный репетитор за рубежом</div><div class="amt">~30–60&nbsp;€</div><div class="sub">за час · если вообще найдётся под нужный предмет</div></div>
-    <div class="col hl"><div class="lbl" style="font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-d);font-weight:700">Онлайн-пакет занятий</div><div class="amt">дешевле</div><div class="sub">за урок · точную цену скажут на бесплатном занятии · из любой страны · скидка за объём до −41% (по данным платформы) и рассрочка</div></div>
+    <div class="col hl"><div class="lbl" style="font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-d);font-weight:700">Онлайн-пакет занятий</div><div class="amt">дешевле</div><div class="sub">за урок · из любой страны · точную цену скажут на бесплатном занятии</div></div>
   </div>
+  <p style="margin:-10px 0 0;font-size:13px;color:var(--muted)">Скидка за объём до −41% (по данным платформы) · доступна рассрочка.</p>
   <p>А чтобы начать выгоднее, для читателей действует промокод на пакет от 16 уроков:</p>
   <p style="margin:.4em 0 0"><span class="promo">SALID10</span> — скидка 10% &nbsp;·&nbsp; <span class="promo">SALID2</span> — +2 урока в подарок</p>
 
@@ -184,17 +191,17 @@
     <h3>Заберите до 5 бесплатных занятий</h3>
     <p>Преподаватель найдёт, где именно ребёнок отстал, объяснит первую трудную тему и покажет формат — а вы решите, подходит ли это вашей семье. Без оплаты и без обязательств. Дальше — короткая анкета: класс → предмет → цель. Промокоды SALID10 / SALID2 — для новых учеников при оформлении пакета от 16 уроков.</p>
     <a class="btn" href="https://best-trening.ru/?o=2193&w=714045&l=16&utm_source=korni&utm_medium=bridge&utm_campaign=tetrika_ege&utm_content=grades" rel="nofollow sponsored" target="_blank" data-cta="main">Забрать до 5 бесплатных занятий →</a>
-    <span class="small">Промокоды <b>SALID10</b> / <b>SALID2</b> действуют при оформлении пакета от 16 уроков.</span>
+    <span class="small">Промокоды <b>SALID10</b> / <b>SALID2</b> — для пакета от 16 уроков.</span>
   </div>
 
   <h2>Частые вопросы</h2>
   <details><summary>Мы не в России — занятия доступны?</summary><p>Да. Формат полностью онлайн, заниматься можно из любой страны и часового пояса — нужен только интернет. Программа — российская: помогают подтянуть школьные предметы, закрыть пробелы и при необходимости подготовиться к ОГЭ/ЕГЭ.</p></details>
   <details><summary>А если ребёнок отстал сильно и стесняется?</summary><p>Индивидуальный формат для этого и нужен: преподаватель идёт от текущего уровня, спокойно и без сравнения с классом. Первые занятия как раз показывают, с чего начать, — давления и оценок «при всех» здесь нет.</p></details>
-  <details><summary>Правда ли до 5 занятий бесплатно?</summary><p>Да, первые занятия (до 5) проводятся бесплатно: преподаватель находит пробелы по нужным предметам и показывает формат. Платить за пакет имеет смысл только если вам подошёл и преподаватель, и подход.</p></details>
+  <details><summary>Правда ли до 5 занятий бесплатно?</summary><p>Да, первые занятия (до 5) проводятся бесплатно: преподаватель находит пробелы по нужным предметам и показывает формат. Платить за пакет имеет смысл только если вам устроил и преподаватель, и подход.</p></details>
   <details><summary>Можно заниматься только по одному «проседающему» предмету?</summary><p>Да. Программа подбирается индивидуально под цель — подтянуть конкретный предмет, выправить оценки, закрыть пробелы или подготовиться к экзамену. Что именно нужно вашему ребёнку, обсуждается на бесплатных занятиях.</p></details>
   <details><summary>Как использовать промокод?</summary><p>Промокоды <b>SALID10</b> (−10%) или <b>SALID2</b> (+2 урока) применяются при оформлении пакета от 16 уроков. Уточните актуальные условия у платформы при оплате.</p></details>
 
-</article></div>
+</article></div></main>
 
 <footer>
   <div class="wrap">

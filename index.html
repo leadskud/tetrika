@@ -2,12 +2,17 @@
 <html lang="ru">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Подготовка к ОГЭ и ЕГЭ онлайн из любой страны: как заниматься с русскоязычным репетитором за рубежом</title>
 <meta name="description" content="Семья за границей, а ребёнку сдавать ОГЭ или ЕГЭ? Разбираем, как организовать подготовку с русскоязычным репетитором онлайн — по индивидуальной программе, из любого часового пояса. Первые занятия (до 5) — бесплатно.">
 <meta property="og:title" content="ОГЭ и ЕГЭ из-за рубежа — подготовка с репетитором онлайн">
 <meta property="og:type" content="article">
+<meta property="og:description" content="Семья за границей, а ребёнку сдавать ОГЭ или ЕГЭ? Как организовать подготовку с русскоязычным репетитором онлайн — из любого часового пояса. Первые занятия (до 5) — бесплатно.">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://tetrika.skillscreen.net/">
+<meta name="twitter:card" content="summary">
 <meta name="robots" content="index,follow">
+<link rel="canonical" href="https://tetrika.skillscreen.net/">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
 <style>
   :root{
@@ -27,8 +32,9 @@
   .logo{display:flex;align-items:center;gap:9px;font-weight:700;letter-spacing:-.01em;text-decoration:none;color:var(--ink);font-size:17px}
   .logo .mark{width:24px;height:24px;display:grid;place-items:center;border-radius:7px;background:var(--accent);color:#fff;font-size:14px}
   .logo small{font-weight:500;color:var(--muted);font-size:13px}
-  .navcta{display:inline-block;background:var(--cta);color:#fff;font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px;white-space:nowrap}
+  .navcta{display:inline-flex;align-items:center;min-height:44px;background:var(--cta);color:#fff;font-weight:700;padding:9px 16px;border-radius:999px;text-decoration:none;font-size:14px;white-space:nowrap}
   .navcta:hover{background:var(--cta-d)}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:6px}
   @media(max-width:520px){.logo small{display:none}}
   .kicker{display:inline-block;margin-top:42px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:700}
   h1{font-family:var(--serif);font-weight:600;font-size:42px;line-height:1.12;letter-spacing:-.015em;margin:.3em 0 .25em}
@@ -85,14 +91,14 @@
   .cta .btn{background:#fff;color:var(--cta-d)}
   .cta .btn:hover{background:#fff;color:var(--cta)}
   .cta .small{display:block;margin-top:14px;font-size:13px;color:#cdbef0}
-  details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none}
+  details{border-bottom:1px solid var(--line);padding:14px 0}summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;padding:8px 0}
   summary::-webkit-details-marker{display:none}summary::before{content:"+";color:var(--accent);font-weight:700;margin-right:10px}
   details[open] summary::before{content:"–"}details p{margin:.5em 0 0;color:#3c3850;font-size:16px}
   footer{border-top:1px solid var(--line);margin-top:40px;padding:30px 0 90px;font-size:14px;color:var(--muted)}
   footer .disc{background:#f1eff8;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:20px;font-size:13.5px;line-height:1.55}
   footer a{color:var(--muted)}footer .frow{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
   /* sticky mobile cta */
-  .stickycta{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -4px 20px rgba(60,40,120,.08)}
+  .stickycta{position:fixed;left:0;right:0;bottom:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:10px 16px;padding-bottom:calc(10px + env(safe-area-inset-bottom));display:none;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 -4px 20px rgba(60,40,120,.08)}
   .stickycta .t{font-size:13px;color:var(--muted);line-height:1.3}
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
@@ -103,7 +109,7 @@
 
 <header class="site">
   <div class="wrap bar">
-    <a class="logo" href="/"><span class="mark">📚</span> Корни <small>· подготовка к экзаменам</small></a>
+    <a class="logo" href="/"><span class="mark" aria-hidden="true">📚</span> Корни <small>· подготовка к экзаменам</small></a>
     <a class="navcta" href="#start" data-cta="header">До 5 уроков бесплатно</a>
   </div>
 </header>
@@ -111,13 +117,13 @@
 <div class="wrap">
   <span class="kicker">ОГЭ · ЕГЭ · до 5 занятий бесплатно · из любой страны</span>
   <h1>Ребёнок за границей, а экзамены — российские. Как готовиться, не теряя год</h1>
-  <p class="dek">Переезд, другая школьная система, другой часовой пояс — и где-то впереди ОГЭ или ЕГЭ по российской программе. Разбираем рабочий вариант: индивидуальная подготовка с русскоязычным репетитором онлайн, из любой точки мира — начать можно с бесплатных занятий (до 5), просто чтобы попробовать.</p>
+  <p class="dek">Переезд, другая школьная система, другой часовой пояс — а впереди ОГЭ или ЕГЭ по российской программе. Рабочий вариант для семьи за рубежом — индивидуальная подготовка с русскоязычным репетитором онлайн, из любой точки мира. Попробовать можно с бесплатных занятий (до 5).</p>
 
   <div class="herocta">
     <a class="btn" href="#start" data-cta="hero">Забрать до 5 бесплатных занятий</a>
     <a class="btn ghost" href="#how">Как это устроено</a>
   </div>
-  <p class="microtrust">Первые <b>занятия (до 5) — бесплатно, без оплаты на старте</b>. Дальше — только если подойдёт преподаватель и формат.</p>
+  <p class="microtrust">Первые <b>занятия (до 5) — бесплатно</b>. Дальше — только если подойдёт преподаватель и формат.</p>
 
   <div class="byline">
     <span class="av"></span>
@@ -125,15 +131,15 @@
   </div>
 </div>
 
-<div class="wrap"><article>
+<main><div class="wrap"><article>
 
-  <p class="lead">Когда семья живёт за границей, подготовка к российским экзаменам превращается в отдельную задачу. Местная школа идёт по своей программе, репетитора «вживую» под ОГЭ/ЕГЭ найти трудно, а онлайн-вариантов так много, что глаза разбегаются. Ниже — как сузить выбор до понятного решения и с чего начать без риска и без оплаты.</p>
+  <p class="lead">Когда семья живёт за границей, подготовка к российским экзаменам превращается в отдельную задачу. Местная школа идёт по своей программе, репетитора «вживую» под ОГЭ или ЕГЭ найти трудно, а онлайн-вариантов так много, что глаза разбегаются. Дальше — как сузить выбор до понятного решения и с чего начать, ничем не рискуя и не платя на старте.</p>
 
   <h2>Что обычно мешает — и почему это решаемо</h2>
   <div class="pains">
     <div class="pain"><b>Пробелы в программе</b><span>Местная школа не покрывает российский курс — копятся темы, которые «прошли мимо».</span></div>
     <div class="pain"><b>Оценки и неуверенность</b><span>Ребёнок отстаёт по конкретным предметам и теряет веру, что догонит.</span></div>
-    <div class="pain"><b>Стресс перед экзаменом</b><span>ОГЭ/ЕГЭ пугают сами по себе, а на расстоянии — вдвойне.</span></div>
+    <div class="pain"><b>Стресс перед экзаменом</b><span>Экзамен пугает сам по себе, а на расстоянии — вдвойне.</span></div>
     <div class="pain"><b>Часовые пояса и логистика</b><span>Очный репетитор в нужном предмете — редкость; расписание не сходится.</span></div>
   </div>
   <p>Все четыре пункта закрываются одним и тем же: <b>индивидуальной онлайн-подготовкой по российской программе</b> — когда занятие подстраивается под уровень и темп конкретного ребёнка, а не наоборот.</p>
@@ -166,7 +172,7 @@
   <div class="case">
     <div class="row">
       <div class="box"><div class="lbl">До</div><div class="big">9 класс за рубежом, тройки по математике, ОГЭ через год, паника у родителей</div></div>
-      <div class="arrow">→</div>
+      <div class="arrow" aria-hidden="true">→</div>
       <div class="box after"><div class="lbl">После курса занятий</div><div class="big">Закрыты пробелы по ключевым темам, разобран формат ОГЭ, спокойствие перед экзаменом</div></div>
     </div>
     <div class="disc">Иллюстративный сценарий типичного запроса, а не отзыв конкретного ученика. Реальный результат зависит от исходного уровня и регулярности занятий.</div>
@@ -176,8 +182,9 @@
   <p>Главное преимущество онлайн — цена. Очный репетитор по российской программе за рубежом стоит дорого и есть не везде; онлайн-занятия на платформе доступны из любой страны и заметно дешевле в пересчёте на урок.</p>
   <div class="price">
     <div class="col"><div class="lbl" style="font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:700">Очный репетитор за рубежом</div><div class="amt">~30–60&nbsp;€</div><div class="sub">за час · если вообще найдётся под нужный предмет</div></div>
-    <div class="col hl"><div class="lbl" style="font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-d);font-weight:700">Онлайн-пакет занятий</div><div class="amt">дешевле</div><div class="sub">за урок · точную цену скажут на бесплатном занятии · из любой страны · скидка за объём до −41% (по данным платформы) и рассрочка</div></div>
+    <div class="col hl"><div class="lbl" style="font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent-d);font-weight:700">Онлайн-пакет занятий</div><div class="amt">дешевле</div><div class="sub">за урок, из любой страны · точную цену скажут на бесплатном занятии</div></div>
   </div>
+  <p class="microtrust" style="margin:-12px 0 0">Скидка за объём — до −41% (по данным платформы); есть рассрочка.</p>
   <p>А чтобы начать выгоднее, для читателей действует промокод на пакет от 16 уроков:</p>
   <p style="margin:.4em 0 0"><span class="promo">SALID10</span> — скидка 10% &nbsp;·&nbsp; <span class="promo">SALID2</span> — +2 урока в подарок</p>
 
@@ -186,17 +193,17 @@
     <p>Познакомитесь с преподавателем, проверите уровень ребёнка по нужным предметам и решите, подходит ли формат — без оплаты и без обязательств. Промокоды SALID10 / SALID2 — для новых учеников при оформлении пакета от 16 уроков.</p>
     <p>Дальше — короткая анкета: класс → предмет → цель.</p>
     <a class="btn" href="https://best-trening.ru/?o=2193&w=714045&l=16&utm_source=korni&utm_medium=bridge&utm_campaign=tetrika_ege&utm_content=base" rel="nofollow sponsored" target="_blank" data-cta="main">Забрать до 5 бесплатных занятий →</a>
-    <span class="small">Промокоды <b>SALID10</b> / <b>SALID2</b> действуют при оформлении пакета от 16 уроков.</span>
+    <span class="small">Скидку по <b>SALID10</b> или бонус по <b>SALID2</b> добавляют к пакету от 16 уроков.</span>
   </div>
 
   <h2>Частые вопросы</h2>
   <details><summary>Мы не в России — занятия доступны?</summary><p>Да. Формат полностью онлайн, заниматься можно из любой страны и часового пояса — нужен только интернет. Программа — российская, под ОГЭ/ЕГЭ и школьный курс.</p></details>
-  <details><summary>Правда ли до 5 занятий бесплатно?</summary><p>Да, первые занятия (до 5) проводятся бесплатно: преподаватель оценивает уровень по нужным предметам и показывает формат. Платить за пакет занятий имеет смысл только если вам подошёл и преподаватель, и подход.</p></details>
+  <details><summary>Правда ли до 5 занятий бесплатно?</summary><p>Да, первые занятия (до 5) проводятся бесплатно: преподаватель оценивает уровень по нужным предметам и показывает формат. Платить за пакет занятий имеет смысл, только если вам подошли и преподаватель, и формат.</p></details>
   <details><summary>А если предмет редкий или нужен конкретный экзамен?</summary><p>Программа подбирается индивидуально под цель — будь то ОГЭ, ЕГЭ, отдельный предмет, олимпиада или дошкольная подготовка. Это обсуждается на бесплатных занятиях.</p></details>
   <details><summary>Кто будет заниматься с ребёнком?</summary><p>Преподаватели платформы — в том числе эксперты ЕГЭ и кандидаты наук; для младших есть логопеды и специалисты дошкольного образования. Платформа заявляет регулярное повышение квалификации.</p></details>
   <details><summary>Как использовать промокод?</summary><p>Промокоды <b>SALID10</b> (−10%) или <b>SALID2</b> (+2 урока) применяются при оформлении пакета от 16 уроков. Уточните актуальные условия у платформы при оплате.</p></details>
 
-</article></div>
+</article></div></main>
 
 <footer>
   <div class="wrap">
