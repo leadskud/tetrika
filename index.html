@@ -103,6 +103,21 @@
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
   @media(max-width:760px){.stickycta{display:flex}}
+
+  /* mobile-CRO (2026-06-12): компактный hero-CTA выше длинного dek на мобайле */
+  @media(max-width:760px){
+    .wrap.hero{display:flex;flex-direction:column}
+    .wrap.hero > *{order:5}
+    .wrap.hero .kicker{order:1}
+    .wrap.hero h1{order:2}
+    .wrap.hero .giftcard{order:3}
+    .wrap.hero .herocta{order:4;margin:14px 0 6px}
+    .wrap.hero .dek{order:6}
+    .wrap.hero .microtrust{order:7}
+    .wrap.hero .byline{order:8}
+    .wrap.hero .herocta .btn.ghost{display:none}
+    .wrap.hero .herocta .btn{width:100%;text-align:center;padding:14px 22px}
+  }
 </style>
 </head>
 <body>
@@ -114,13 +129,13 @@
   </div>
 </header>
 
-<div class="wrap">
+<div class="wrap hero">
   <span class="kicker">ОГЭ · ЕГЭ · до 5 занятий бесплатно · из любой страны</span>
   <h1>Ребёнок за границей, а экзамены — российские. Как готовиться, не теряя год</h1>
   <p class="dek">Переезд, другая школьная система, другой часовой пояс — а впереди ОГЭ или ЕГЭ по российской программе. Рабочий вариант для семьи за рубежом — индивидуальная подготовка с русскоязычным репетитором онлайн, из любой точки мира. Попробовать можно с бесплатных занятий (до 5).</p>
 
   <div class="herocta">
-    <a class="btn" href="#start" data-cta="hero">Забрать до 5 бесплатных занятий</a>
+    <a class="btn" href="https://best-trening.ru/?o=2193&w=714045&l=16&utm_source=korni&utm_medium=bridge&utm_campaign=tetrika_ege&utm_content=base" rel="nofollow sponsored" target="_blank" data-cta="hero">Забрать до 5 бесплатных занятий</a>
     <a class="btn ghost" href="#how">Как это устроено</a>
   </div>
   <p class="microtrust">Первые <b>занятия (до 5) — бесплатно</b>. Дальше — только если подойдёт преподаватель и формат.</p>

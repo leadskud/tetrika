@@ -115,6 +115,21 @@
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
   @media(max-width:760px){.stickycta{display:flex}}
+
+  /* mobile-CRO (2026-06-12): компактный hero-CTA выше длинного dek на мобайле */
+  @media(max-width:760px){
+    .wrap.hero{display:flex;flex-direction:column}
+    .wrap.hero > *{order:5}
+    .wrap.hero .kicker{order:1}
+    .wrap.hero h1{order:2}
+    .wrap.hero .giftcard{order:3}
+    .wrap.hero .herocta{order:4;margin:14px 0 6px}
+    .wrap.hero .dek{order:6}
+    .wrap.hero .microtrust{order:7}
+    .wrap.hero .byline{order:8}
+    .wrap.hero .herocta .btn.ghost{display:none}
+    .wrap.hero .herocta .btn{width:100%;text-align:center;padding:14px 22px}
+  }
 </style>
 </head>
 <body>
@@ -127,7 +142,7 @@
 </header>
 
 <main>
-<div class="wrap">
+<div class="wrap hero">
   <span class="kicker">Подарок · до 5 занятий бесплатно · ОГЭ · ЕГЭ · из любой страны</span>
   <h1>До 5 бесплатных занятий с репетитором — по любым школьным предметам, из любой страны</h1>
   <p class="dek">Выберите класс, предмет и цель — подберём преподавателя и программу под ОГЭ, ЕГЭ или нужный предмет. Онлайн, из любого часового пояса. Начать можно с пробных занятий, без оплаты на старте.</p>

@@ -103,6 +103,21 @@
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
   @media(max-width:760px){.stickycta{display:flex}}
+
+  /* mobile-CRO (2026-06-12): компактный hero-CTA выше длинного dek на мобайле */
+  @media(max-width:760px){
+    .wrap.hero{display:flex;flex-direction:column}
+    .wrap.hero > *{order:5}
+    .wrap.hero .kicker{order:1}
+    .wrap.hero h1{order:2}
+    .wrap.hero .giftcard{order:3}
+    .wrap.hero .herocta{order:4;margin:14px 0 6px}
+    .wrap.hero .dek{order:6}
+    .wrap.hero .microtrust{order:7}
+    .wrap.hero .byline{order:8}
+    .wrap.hero .herocta .btn.ghost{display:none}
+    .wrap.hero .herocta .btn{width:100%;text-align:center;padding:14px 22px}
+  }
 </style>
 </head>
 <body>
@@ -114,13 +129,13 @@
   </div>
 </header>
 
-<div class="wrap">
+<div class="wrap hero">
   <span class="kicker">Русская программа · родной язык · до 5 занятий бесплатно</span>
   <h1>Чтобы ребёнок за границей не потерял русскую школу — и не вырос иностранцем</h1>
   <p class="dek">На новом месте ребёнок быстро переходит на местный язык, а русский, литература и математика «по-нашему» тихо уходят на второй план. Сохранить связь с российской школой помогают индивидуальные онлайн-занятия с русскоязычным репетитором — чтобы у ребёнка остались и язык, и корни, и путь к вузу в России. Попробовать можно без оплаты: до 5 занятий бесплатно.</p>
 
   <div class="herocta">
-    <a class="btn" href="#start" data-cta="hero">Забрать до 5 бесплатных занятий</a>
+    <a class="btn" href="https://best-trening.ru/?o=2193&w=714045&l=16&utm_source=korni&utm_medium=bridge&utm_campaign=tetrika_ege&utm_content=roots" rel="nofollow sponsored" target="_blank" data-cta="hero">Забрать до 5 бесплатных занятий</a>
     <a class="btn ghost" href="#how">Как это устроено</a>
   </div>
   <p class="microtrust">Первые <b>занятия (до 5) — бесплатно</b>. Дальше — только если подойдёт преподаватель и формат.</p>

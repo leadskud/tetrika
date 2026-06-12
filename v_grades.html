@@ -103,6 +103,21 @@
   .stickycta .t b{color:var(--ink);font-size:14px}
   .stickycta .btn{padding:11px 18px;font-size:15px;box-shadow:none}
   @media(max-width:760px){.stickycta{display:flex}}
+
+  /* mobile-CRO (2026-06-12): компактный hero-CTA выше длинного dek на мобайле */
+  @media(max-width:760px){
+    .wrap.hero{display:flex;flex-direction:column}
+    .wrap.hero > *{order:5}
+    .wrap.hero .kicker{order:1}
+    .wrap.hero h1{order:2}
+    .wrap.hero .giftcard{order:3}
+    .wrap.hero .herocta{order:4;margin:14px 0 6px}
+    .wrap.hero .dek{order:6}
+    .wrap.hero .microtrust{order:7}
+    .wrap.hero .byline{order:8}
+    .wrap.hero .herocta .btn.ghost{display:none}
+    .wrap.hero .herocta .btn{width:100%;text-align:center;padding:14px 22px}
+  }
 </style>
 </head>
 <body>
@@ -114,13 +129,13 @@
   </div>
 </header>
 
-<div class="wrap">
+<div class="wrap hero">
   <span class="kicker">Подтянуть оценки · вернуть уверенность · до 5 занятий бесплатно</span>
   <h1>Ребёнок «не тянет» русскую программу за границей? Это поправимо — и быстрее, чем кажется</h1>
   <p class="dek">Двойки и тройки по паре предметов, опущенные руки, фраза «у меня всё равно не получится». Местная школа учит по-своему, помочь с русским курсом некому. Индивидуальный онлайн-репетитор закрывает именно те пробелы, что мешают: оценки подтягиваются, а вера в себя возвращается. Начать можно с бесплатных занятий (до 5) — просто чтобы попробовать.</p>
 
   <div class="herocta">
-    <a class="btn" href="#start" data-cta="hero">Забрать до 5 бесплатных занятий</a>
+    <a class="btn" href="https://best-trening.ru/?o=2193&w=714045&l=16&utm_source=korni&utm_medium=bridge&utm_campaign=tetrika_ege&utm_content=grades" rel="nofollow sponsored" target="_blank" data-cta="hero">Забрать до 5 бесплатных занятий</a>
     <a class="btn ghost" href="#how">Как это устроено</a>
   </div>
   <p class="microtrust">Первые <b>занятия — бесплатно (до 5)</b>. Преподаватель найдёт пробелы и покажет формат — дальше только если подойдёт.</p>
